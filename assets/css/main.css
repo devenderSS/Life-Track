@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+body {
+  background-color: #91d593; }
+
+header {
+  text-align: center;
+  height: 500px; }
+  header img {
+    position: relative;
+    top: 40px; }
+
+section {
+  width: 85%;
+  margin: 30px auto; }
+
+section.intro {
+  display: flex; }
+  section.intro .para {
+    width: 50%;
+    height: 345px;
+    padding: 20px; }
+    section.intro .para p {
+      margin: 0;
+      font-size: 32px;
+      color: #803300; }
+    section.intro .para blockquote {
+      font-family: 'Bangers',cursive;
+      font-size: 25pt;
+      font-weight: lighter; }
+  section.intro .links {
+    width: 50%;
+    height: 345px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background: url("../img/owl.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    section.intro .links .link {
+      width: 47%;
+      height: 135.5px;
+      background: rgba(128, 5, 0, 0.4); }
+
+section.plans h1 {
+  color: #803300;
+  font-family: 'Lobster',cursive;
+  font-size: 60.69px;
+  margin-bottom: 0; }
+section.plans hr {
+  height: 5px;
+  background-color: #803300; }
+section.plans .plan {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%; }
+  section.plans .plan .link {
+    height: inherit;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section.plans .plan .link a {
+      -webkit-transition: all 300ms;
+      -moz-transition: all 300ms;
+      transition: all 300ms;
+      text-decoration: none;
+      background: rgba(170, 0, 0, 0.68) none repeat scroll 0% 0%;
+      padding: 0.5em;
+      font-size: 20pt;
+      width: 200px;
+      text-align: center;
+      color: wheat;
+      border-radius: 5px;
+      box-shadow: 0px 0px 4px 0px black, 0px 0px 0px 0px white; }
+      section.plans .plan .link a:hover {
+        box-shadow: 0px 0px 0px 3px #91d593, 0px 0px 0px 6px rgba(170, 0, 0, 0.68); }
+  section.plans .plan .description {
+    width: 40%;
+    height: inherit;
+    color: #803300; }
+
+/*# sourceMappingURL=main.css.map */

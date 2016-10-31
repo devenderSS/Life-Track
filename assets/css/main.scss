@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import "bourbon/_bourbon.scss";
+body{
+  background-color: rgb(145, 213, 147);
+}
+header{
+  text-align: center;
+  height: 500px;
+  img{
+    position: relative;
+    top: 40px;
+  }
+}
+section{
+  width: 85%;
+  //height: 345px;
+  margin: 30px auto;
+}
+section.intro{
+
+  //background: #DDDDDD;
+  display: flex;
+  .para{
+    width: 50%;
+    height: 345px;
+    //background: yellow;
+    padding: 20px;
+    p{
+      margin: 0;
+      font-size: 32px;
+      color: rgb(128,51,0);
+
+    }
+    blockquote{
+      font-family: 'Bangers',cursive;
+      font-size: 25pt;
+font-weight: lighter;
+    }
+  }
+  .links{
+    width: 50%;
+    height: 345px;
+    //background: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    //background: ("img/owl.png");
+    background: url("../img/owl.png");
+background-position: center center;
+background-size: contain;
+background-repeat: no-repeat;
+    .link{
+      //margin: 20px;
+      width: 47%;
+      height: 135.5px;
+      background: rgba(128,5,0,0.4);
+
+
+    }
+  }
+}
+section.plans{
+  h1{
+    color: rgb(128,51,0);
+    font-family: 'Lobster',cursive;
+    font-size: 60.69px;
+    margin-bottom: 0;
+  }
+  hr{
+    height: 5px;
+    background-color: rgb(128,51,0);
+  }
+  .plan{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    //height: 200px;
+    //background: #DDDDDD;
+    .link{
+      height: inherit;
+      flex-grow: 1;
+      //background: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        @include transition(all 300ms);
+        text-decoration: none;
+        background: rgba(170, 0, 0, 0.68) none repeat scroll 0% 0%;
+//text-align: center;
+        padding: 0.5em;
+        font-size: 20pt;
+        width: 200px;
+        text-align: center;
+        color: wheat;
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px 0px black, 0px 0px 0px 0px white;
+        &:hover{
+            box-shadow: 0px 0px 0px 3px rgb(145, 213, 147), 0px 0px 0px 6px rgba(170,0,0,0.68);
+               }
+      }
+
+    }
+    .description{
+      width: 40%;
+      height: inherit;
+      //background: yellow;
+      color: rgb(128,51,0);
+      //padding: 10px;
+    }
+  }
+}
